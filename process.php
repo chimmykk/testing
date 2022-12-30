@@ -1,7 +1,6 @@
 <?php
 
 
-$conn= new mysqli('sql6.freemysqlhosting.net','sql6587280','lL9IzSLKt6','sql6587280')or die("Could not connect to mysql".mysqli_error($con));
 
   $server = "sql6.freemysqlhosting.net";
   $username = "sql6587280";
@@ -17,10 +16,7 @@ $conn= new mysqli('sql6.freemysqlhosting.net','sql6587280','lL9IzSLKt6','sql6587
 
   $sql = "INSERT INTO users (name, address, phone) VALUES ('$name', '$address', '$phone')";
   mysqli_query($conn, $sql);
-$sql = '
-\n"
 
-    . "$sql  = \'SELECT * FROM `users`"';
 
   mysqli_close($conn);
 ?>
