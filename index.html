@@ -15,8 +15,21 @@
 
 <script>
 function submitForm() {
-  document.getElementById("form").submit();
+  // Get the form element
+  var form = document.getElementById("form");
+
+  // Get the values of the form inputs
+  var productid = form.elements["productid"].value;
+  var productname = form.elements["productname"].value;
+  var productprice = form.elements["productprice"].value;
+  var productexpiry = form.elements["productexpiry"].value;
+
+  // Validate the form inputs here, if necessary
+
+  // If the form inputs are valid, submit the form
+  form.submit();
 }
+
 </script>
 
 </body>
