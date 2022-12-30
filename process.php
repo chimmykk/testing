@@ -4,7 +4,7 @@
   $password = "lL9IzSLKt6";
 
   $conn = mysqli_connect($server, $username, $password);
-  mysqli_select_db($conn, "sql6587280");
+  mysqli_select_db($conn, "user_info");
 
   $name = $_POST['name'];
   $address = $_POST['address'];
