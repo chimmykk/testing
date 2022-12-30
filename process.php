@@ -7,6 +7,7 @@ $conn= new mysqli('sql6.freemysqlhosting.net','sql6587280','lL9IzSLKt6','sql6587
   $username = "sql6587280";
   $password = "lL9IzSLKt6";
 
+
   $conn = mysqli_connect($server, $username, $password);
   mysqli_select_db($conn, "sql6587280");
 
@@ -16,6 +17,10 @@ $conn= new mysqli('sql6.freemysqlhosting.net','sql6587280','lL9IzSLKt6','sql6587
 
   $sql = "INSERT INTO users (name, address, phone) VALUES ('$name', '$address', '$phone')";
   mysqli_query($conn, $sql);
+$sql = '
+\n"
+
+    . "$sql  = \'SELECT * FROM `users`"';
 
   mysqli_close($conn);
 ?>
